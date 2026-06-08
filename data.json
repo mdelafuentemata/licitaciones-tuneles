@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-05-20T00:00:00+02:00",
+  "lastUpdate": "2026-06-08T18:12:13+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -69,7 +69,7 @@
       "location": "Red de Ancho Métrico (cornisa cantábrica)",
       "deadline": "2026-05-29T11:00:00",
       "deadlineText": "29 may 2026, 11:00",
-      "importe": 530840.00,
+      "importe": 530840.0,
       "duracion": "24 meses",
       "proc": "Abierto",
       "cpv": "71242000 (Elaboración de proyectos y diseños)",
