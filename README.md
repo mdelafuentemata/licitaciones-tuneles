@@ -31,7 +31,7 @@ Web automática que muestra las licitaciones publicadas en la Plataforma de Cont
 **Excluidas:**
 - Edificación, aunque sea próxima al túnel (edificios anejos al emboquille, centros de mantenimiento, talleres).
 - Instalaciones electromecánicas (señalización, balizamiento, iluminación, CCTV, telecomunicaciones, redes de aguas, ventilación como suministro de equipos, detección de incendios).
-- Protección genérica de plataforma ferroviaria sin mención explícita a túnel.
+- Protección genérica de plataforma ferroviaria sin mención explícita a túnel .
 
 ## Ejecutar el scraper manualmente
 
