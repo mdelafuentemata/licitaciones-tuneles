@@ -116,9 +116,13 @@ def strip_accents(text: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
 
 
-def fetch(url: str) -> str:
+def fetch(url: str, accept: str = "application/xml") -> str:
     """GET con headers educados; devuelve texto o lanza."""
-    r = requests.get(url, headers={"User-Agent": BOE_USER_AGENT}, timeout=REQUEST_TIMEOUT)
+    r = requests.get(
+        url,
+        headers={"User-Agent": BOE_USER_AGENT, "Accept": accept},
+        timeout=REQUEST_TIMEOUT,
+    )
     r.raise_for_status()
     time.sleep(SLEEP_BETWEEN_REQS)
     return r.text
@@ -137,7 +141,14 @@ def parse_xml(text: str) -> ET.Element:
 # =====================================================================
 
 def daily_summary_url(date: datetime) -> str:
-    return f"https://www.boe.es/diario_boe/xml.php?id=BOE-S-{date.strftime('%Y%m%d')}"
+    # OJO: el identificador de un sumario NO es "BOE-S-{fecha}" (eso da 400
+    # Bad Request en /diario_boe/xml.php — el identificador real de un
+    # sumario es "BOE-S-{año}-{numero_de_diario}", p.ej. "BOE-S-2024-130",
+    # y ese número de diario no se puede derivar de la fecha sin conocerlo
+    # de antemano). El endpoint correcto para pedir el sumario POR FECHA es
+    # la API dedicada de datos abiertos, documentada en
+    # https://www.boe.es/datosabiertos/documentos/APIsumarioBOE.pdf
+    return f"https://www.boe.es/datosabiertos/api/boe/sumario/{date.strftime('%Y%m%d')}"
 
 
 def anuncio_xml_url(anuncio_id: str) -> str:
