@@ -51,4 +51,4 @@ En GitHub: pestaña **Actions** → workflow **Scrape BOE semanal** → botón *
 
 ## Licencia
 
-MIT. Los datos extraídos del BOE son públicos y de libre reutilización.
+MIT. Los datos extraídos del BOE son públicos y de libre reutilización. 
