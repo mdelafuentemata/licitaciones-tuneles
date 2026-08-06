@@ -44,6 +44,8 @@ KEYWORDS = [
     "caverna", "cavernas",
     "falso tunel",
     "boca de mina",
+    "perforacion horizontal",
+    "trinchera cubierta",
 ]
 
 # Palabras que indican obra civil de túnel propiamente
@@ -96,6 +98,13 @@ ORG_GROUP_MAP = {
     "confederacion hidrografica": "chs",
 }
 
+# Códigos de sección del BOE que nos interesan (V. Anuncios).
+# OJO: el atributo real del nodo <seccion> en el XML del BOE es "codigo",
+# NO "num", y su valor es alfanumérico ("5A" = Contratación del Sector
+# Público, "5B" = Otros anuncios oficiales), no el entero "5".
+# Ver: https://www.boe.es/datosabiertos/documentos/APIsumarioBOE.pdf
+SECCION_CODIGOS_ANUNCIOS = {"5A"}  # solo Contratación del Sector Público
+
 
 # =====================================================================
 # UTILIDADES
@@ -142,23 +151,31 @@ def anuncio_txt_url(anuncio_id: str) -> str:
 def list_anuncios_for_date(date: datetime) -> list[dict]:
     """Devuelve los anuncios de Sección V·A para una fecha dada.
 
-    El sumario diario del BOE tiene la estructura:
+    Estructura real del sumario del BOE (ver APIsumarioBOE.pdf):
       <sumario>
-        <diario>
-          <seccion num="5" nombre="V. Anuncios">
-            <departamento nombre="...">
+        <diario numero="...">
+          <seccion codigo="5A" nombre="V. Anuncios - A. Contratación del Sector Público">
+            <departamento codigo="..." nombre="...">
               <epigrafe nombre="...">
-                <item id="BOE-B-2026-XXXXX">
+                <item>
+                  <identificador>BOE-B-2026-XXXXX</identificador>
                   <titulo>...</titulo>
                   <url_pdf>...</url_pdf>
                   <url_html>...</url_html>
                   <url_xml>...</url_xml>
                 </item>
               </epigrafe>
+              <!-- algunos departamentos listan <item> directamente, sin <epigrafe> -->
             </departamento>
           </seccion>
         </diario>
       </sumario>
+
+    El nodo <seccion> usa el atributo "codigo" (alfanumérico, p.ej. "5A"),
+    no "num". Antes filtrábamos por seccion.attrib.get("num") == "5", que
+    nunca existe en el XML real: el filtro siempre era falso y la función
+    devolvía [] para todas las fechas. Corregido para usar "codigo" y el
+    valor real de la sección de contratación ("5A").
     """
     out = []
     try:
@@ -168,14 +185,18 @@ def list_anuncios_for_date(date: datetime) -> list[dict]:
         print(f"  ! No se pudo obtener sumario {date:%Y-%m-%d}: {e}", file=sys.stderr)
         return out
 
-    # Buscar todas las secciones; nos interesa la V (num=5)
     for seccion in root.iter("seccion"):
-        num = seccion.attrib.get("num", "")
-        if num != "5":
+        codigo = seccion.attrib.get("codigo", "")
+        if codigo not in SECCION_CODIGOS_ANUNCIOS:
             continue
-        # Cualquier item dentro de la sección 5 es candidato
+        # Cualquier item dentro de la sección 5A es candidato
         for item in seccion.iter("item"):
+            # El identificador puede venir como atributo "id" (formato legacy)
+            # o como nodo hijo <identificador> (formato API actual). Soportamos ambos.
             anuncio_id = item.attrib.get("id", "")
+            if not anuncio_id:
+                id_el = item.find("identificador")
+                anuncio_id = (id_el.text or "").strip() if id_el is not None else ""
             titulo_el = item.find("titulo")
             titulo = (titulo_el.text or "").strip() if titulo_el is not None else ""
             if not anuncio_id or not titulo:
