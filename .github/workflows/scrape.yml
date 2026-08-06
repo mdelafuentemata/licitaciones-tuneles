@@ -10,6 +10,14 @@ on:
 
 permissions:
   contents: write          # Necesario para hacer push del data.json actualizado
+  pages: write              # Necesario para publicar en GitHub Pages
+  id-token: write           # Necesario para el token OIDC que exige actions/deploy-pages
+
+# Evita que dos deployments de Pages se pisen entre sí (esto es justo lo que
+# dejó un deployment "fantasma" atascado en deployment_queued la última vez).
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 # Fuerza Node.js 24 en cualquier acción JS, para no depender de versiones legacy.
 env:
@@ -44,3 +52,41 @@ jobs:
             git commit -m "Actualización semanal del BOE - $(date -u +'%Y-%m-%d')"
             git push
           fi
+
+  # Publica la web en GitHub Pages justo después de actualizar data.json.
+  #
+  # IMPORTANTE: esto va como job separado dentro del MISMO workflow, no como
+  # un workflow aparte disparado por "on: push". Dos motivos:
+  #  1. Un "on: push" nunca haría nada por sí solo: no había ningún workflow
+  #     escuchando push a main, así que nada se disparaba tras el commit.
+  #  2. Aunque lo hubiera, el push que hace el job "scrape" lo firma el
+  #     GITHUB_TOKEN por defecto, y GitHub bloquea explícitamente que ese
+  #     token dispare otros workflows via push (para evitar bucles
+  #     infinitos). Así que un job de deploy con "on: push" jamás se habría
+  #     enterado de los commits automáticos del scraper.
+  # Al ponerlo como segundo job con "needs: scrape" dentro de esta misma
+  # ejecución, se dispara siempre, tanto si hubo cambios en data.json como
+  # si no, sin depender de ningún evento externo.
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repo (rama principal actualizada, con el commit del scraper)
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto estático (index.html, data.json, .nojekyll)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
