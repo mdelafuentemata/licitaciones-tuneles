@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-10T10:21:56+00:00",
+  "lastUpdate": "2026-08-17T08:32:55+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -195,6 +195,26 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-25766",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-26826",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: ADIF -Consejo de Administración. Objeto: Ejecución de las obras del proyecto de tratamiento del túnel nº3 Rubí, entre los pp.kk. 4+581 y 5+495 de la línea 246 Mollet - Sant Fost - Castellbisbal - Agujas Rubí (Barcelona). Expediente: 3.25/27507.0142.",
+      "org": "Ministerio de Transportes y Movilidad Sostenible",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-26826",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "45221119",
+      "obj": "Anuncio de formalización de contratos de: ADIF -Consejo de Administración. Objeto: Ejecución de las obras del proyecto de tratamiento del túnel nº3 Rubí, entre los pp.kk. 4+581 y 5+495 de la línea 246 Mollet - Sant Fost - Castellbisbal - Agujas Rubí (Barcelona). Expediente: 3.25/27507.0142.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-26826",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
