@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-17T09:48:40+00:00",
+  "lastUpdate": "2026-08-24T08:37:18+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -215,6 +215,26 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-26826",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-27711",
+      "type": "revisar",
+      "title": "Anuncio de licitación de: Dirección General del Consorcio Casa de América. Objeto: El objeto del contrato es la prestación del servicio de limpieza de los edificios y espacios que integran la sede del Consorcio Casa de América en Madrid, (Palacio de Linares, Pabellón de Caballerizas, espacios subterráneos, jardín y terraza) y zona aledaña al Palacio. Expediente: DG 01/05/26.",
+      "org": "Otros Poderes Adjudicadores",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-27711",
+      "location": "",
+      "deadline": "2026-09-18T14:00:00",
+      "deadlineText": "18 sep 2026, 14:00",
+      "importe": 731500.0,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "90911000",
+      "obj": "Anuncio de licitación de: Dirección General del Consorcio Casa de América. Objeto: El objeto del contrato es la prestación del servicio de limpieza de los edificios y espacios que integran la sede del Consorcio Casa de América en Madrid, (Palacio de Linares, Pabellón de Caballerizas, espacios subterráneos, jardín y terraza) y zona aledaña al Palacio. Expediente: DG 01/05/26.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-27711",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
