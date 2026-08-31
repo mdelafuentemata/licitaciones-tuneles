@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-24T09:53:55+00:00",
+  "lastUpdate": "2026-08-31T15:41:48+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -235,6 +235,26 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-27711",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-27887",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos de la Guardia Civil. Objeto: Obras necesarias para la reparación de los daños que presenta la Galería de Tiro en el Complejo del Colegio de Guardias Jóvenes de Valdemoro (Madrid),. Expediente: C/0095/X/25/6.",
+      "org": "Ministerio del Interior",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-27887",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "45216110",
+      "obj": "Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos de la Guardia Civil. Objeto: Obras necesarias para la reparación de los daños que presenta la Galería de Tiro en el Complejo del Colegio de Guardias Jóvenes de Valdemoro (Madrid),. Expediente: C/0095/X/25/6.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-27887",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
