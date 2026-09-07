@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-31T16:57:02+00:00",
+  "lastUpdate": "2026-09-07T13:49:07+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -255,6 +255,26 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-27887",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-28292",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: ADIF - Presidencia. Objeto: Servicios para la realización de inspecciones principales de túneles de la red de alta velocidad administrada por Adif - 2 lotes. Expediente: 2.25/21520.0113.",
+      "org": "Ministerio de Transportes y Movilidad Sostenible",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-28292",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "71356000",
+      "obj": "Anuncio de formalización de contratos de: ADIF - Presidencia. Objeto: Servicios para la realización de inspecciones principales de túneles de la red de alta velocidad administrada por Adif - 2 lotes. Expediente: 2.25/21520.0113.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-28292",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
