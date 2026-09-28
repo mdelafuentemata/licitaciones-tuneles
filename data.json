@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-21T15:47:54+00:00",
+  "lastUpdate": "2026-09-28T16:16:57+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -355,6 +355,46 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-29293",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-30890",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: Dirección General del INTA. Objeto: Actualización sistema de vacío del túnel del cavitación. Expediente: 582026026800.",
+      "org": "Ministerio de Defensa",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-30890",
+      "location": "",
+      "deadline": "2026-07-02T23:59:00",
+      "deadlineText": "2 jul 2026, 23:59",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "38420000",
+      "obj": "Anuncio de formalización de contratos de: Dirección General del INTA. Objeto: Actualización sistema de vacío del túnel del cavitación. Expediente: 582026026800.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-30890",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-30914",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: ADIF -Consejo de Administración. Objeto: Servicios de redacción de proyectos de tratamiento de la infraestructura (puentes y pasos superiores, túneles, obras de tierra y zonas inundables) de la red ferroviaria de interés general (RFIG). 6 lotes. Expediente: 4.25/27507.0125.",
+      "org": "Ministerio de Transportes y Movilidad Sostenible",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-30914",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "71240000",
+      "obj": "Anuncio de formalización de contratos de: ADIF -Consejo de Administración. Objeto: Servicios de redacción de proyectos de tratamiento de la infraestructura (puentes y pasos superiores, túneles, obras de tierra y zonas inundables) de la red ferroviaria de interés general (RFIG). 6 lotes. Expediente: 4.25/27507.0125.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-30914",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
