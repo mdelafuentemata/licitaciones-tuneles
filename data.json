@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-28T17:30:48+00:00",
+  "lastUpdate": "2026-10-05T16:37:54+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -395,6 +395,46 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-30914",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-32221",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos del Estado Mayor de la Defensa. Objeto: Sistema de lavado de cuberterías (túnel de arrastre) para la Base de Retamares. Expediente: 2026/SP02002001/00001499E.",
+      "org": "Ministerio de Defensa",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-32221",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "39713100",
+      "obj": "Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos del Estado Mayor de la Defensa. Objeto: Sistema de lavado de cuberterías (túnel de arrastre) para la Base de Retamares. Expediente: 2026/SP02002001/00001499E.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-32221",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-31700",
+      "type": "revisar",
+      "title": "Anuncio de formalización de contratos de: Dirección General del INTA. Objeto: Estudio de instrumentación de galería de experimentación láser de CETEDEX. Expediente: 582026030800.",
+      "org": "Ministerio de Defensa",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-31700",
+      "location": "",
+      "deadline": null,
+      "deadlineText": "—",
+      "importe": null,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "71335000",
+      "obj": "Anuncio de formalización de contratos de: Dirección General del INTA. Objeto: Estudio de instrumentación de galería de experimentación láser de CETEDEX. Expediente: 582026030800.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-31700",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
