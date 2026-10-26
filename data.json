@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-19T16:20:54+00:00",
+  "lastUpdate": "2026-10-26T14:41:14+00:00",
   "tenders": [
     {
       "id": "boe-2026-3253",
@@ -575,6 +575,46 @@
       "historical": false,
       "confidence": "baja",
       "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-33228",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-34339",
+      "type": "revisar",
+      "title": "Anuncio de licitación de: ADIF -Consejo de Administración. Objeto: Mantenimiento de las instalaciones de protección civil y seguridad de los túneles de Galicia. Tramos: Ourense-Santiago de Compostela, del corredor norte-noroeste de alta velocidad, Vigo - A Coruña del eje atlántico, accesos puerto exterior de A Coruña y otros túneles de Galicia. Expediente: 4.26/28520.0063.",
+      "org": "Ministerio de Transportes y Movilidad Sostenible",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-34339",
+      "location": "",
+      "deadline": "2026-11-16T10:00:00",
+      "deadlineText": "16 nov 2026, 10:00",
+      "importe": 11388970.55,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "50220000",
+      "obj": "Anuncio de licitación de: ADIF -Consejo de Administración. Objeto: Mantenimiento de las instalaciones de protección civil y seguridad de los túneles de Galicia. Tramos: Ourense-Santiago de Compostela, del corredor norte-noroeste de alta velocidad, Vigo - A Coruña del eje atlántico, accesos puerto exterior de A Coruña y otros túneles de Galicia. Expediente: 4.26/28520.0063.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-34339",
+      "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
+    },
+    {
+      "id": "boe-b-2026-34249",
+      "type": "revisar",
+      "title": "Anuncio de licitación de: Dirección del Consorcio para el Equipamiento y Explotación del Laboratorio Subterráneo de Canfranc. Objeto: Servicio de transporte internacional multimodal en regimen dedicado para la expedicion a Japon de los componentes de las cubiertas protectoras de la contribucion española al proyecto internacional Hyperkamiokande. Expediente: SVPA002/2026.",
+      "org": "Ministerio de Ciencia, Innovación y Universidades",
+      "orgGroup": "",
+      "expediente": "BOE-B-2026-34249",
+      "location": "",
+      "deadline": "2026-11-18T17:00:00",
+      "deadlineText": "18 nov 2026, 17:00",
+      "importe": 252525.0,
+      "duracion": "",
+      "proc": "Abierto",
+      "cpv": "60640000",
+      "obj": "Anuncio de licitación de: Dirección del Consorcio para el Equipamiento y Explotación del Laboratorio Subterráneo de Canfranc. Objeto: Servicio de transporte internacional multimodal en regimen dedicado para la expedicion a Japon de los componentes de las cubiertas protectoras de la contribucion española al proyecto internacional Hyperkamiokande. Expediente: SVPA002/2026.",
+      "historical": false,
+      "confidence": "baja",
+      "boeUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-34249",
       "placspUrl": "https://contrataciondelestado.es/wps/portal/licRecientes"
     }
   ]
